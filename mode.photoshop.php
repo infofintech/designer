@@ -27,7 +27,7 @@ include 'workspace.php';
     <p align='center'>
     Brightness: 
     <input type='button' value="<?=$brightness.'%';?>"> 
-    Saturation: 
+    Saturate: 
     <input type='button' value="<?=$saturation.'%';?>">
     </p>
     <p align='center'>
