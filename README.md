@@ -1,2 +1,2 @@
 # Designer
-A web application module for graphic designers.
+A web application extra modules.
