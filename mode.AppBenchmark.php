@@ -1,11 +1,11 @@
 <div class='back'>
 <?php
-$parent = 'menu';
 if ($request['lock'] == 'true') {
     $accountPrefix = 'mani.';
 } else {
     $accountPrefix = 'mano.';
 }
+
 $portfolioProfileIMG = $accountPrefix.'head.png'.$suffix;
 $portfolioLeftIMG = $accountPrefix.'left0.png'.$suffix;
 $portfolioRightIMG = $accountPrefix.'right0.png'.$suffix;
@@ -15,9 +15,11 @@ $portfolioSinisterLeftIMG = $accountPrefix.'left270.png'.$suffix;
 $portfolioSinisterRightIMG = $accountPrefix.'right270.png'.$suffix;
 $portfolioDexterLeftIMG = $accountPrefix.'left90.png'.$suffix;
 $portfolioDexterRightIMG = $accountPrefix.'right90.png'.$suffix;
+
 include 'workspace.php';
 ?>
 </div>
+
 <div class='panel' <?php if ($module['spectate'] == 1) { ?> hidden <?php } ?>>
 <p align="center">
 <?php if (horizontal($request['angle'], 360) == 'u') { ?>

@@ -1,15 +1,15 @@
 <div class='back'>
-<?php
-$parent = 'menu';
-include 'workspace.php';
-?>
+<?php include 'workspace.php'; ?>
 </div>
+
 <div class='panel' <?php if ($module['spectate'] == 1) { ?> hidden <?php } ?>>
+
 <p align='center' class='block'>
   <input type="button" value="Reset" onclick="setFilters(40, 0, 100, 100, 100, 0, 0, 0); window.location.reload();">
   <input type="button" value="Retro" onclick="setFilters(40, 0, 100, 150, 110, 50, 0, 0); window.location.reload();">
   <input type="button" value="Back" onclick="omniGo('<?=$parent;?>');">
 </p>
+
 <p align='center'>
   <div class="slidecontainer">
     <p align='center'>
@@ -23,6 +23,7 @@ include 'workspace.php';
     <input type="range" min="0" max="100" value="<?=$blur;?>" class="slider" id="blurRange" onchange="setFilters(sysDefOpacity.value, this.value, sysDefBrightness.value, sysDefSaturation.value, sysDefContrast.value, sysDefSepia.value, sysDefGrayscale.value, sysDefHue.value); window.location.reload();">
     </p>
   </div>
+
   <div class="slidecontainer">
     <p align='center'>
     Bright: 
@@ -35,6 +36,7 @@ include 'workspace.php';
     <input type="range" min="0" max="200" value="<?=$saturation;?>" class="slider" id="saturationRange" onchange="setFilters(sysDefOpacity.value, sysDefBlur.value, sysDefBrightness.value, this.value, sysDefContrast.value, sysDefSepia.value, sysDefGrayscale.value, sysDefHue.value); window.location.reload();">
     </p>
   </div>
+
   <div class="slidecontainer">
     <p align='center'>
     Contrast: 
@@ -47,6 +49,7 @@ include 'workspace.php';
     <input type="range" min="0" max="100" value="<?=$sepia;?>" class="slider" id="sepiaRange" onchange="setFilters(sysDefOpacity.value, sysDefBlur.value, sysDefBrightness.value, sysDefSaturation.value, sysDefContrast.value, this.value, sysDefGrayscale.value, sysDefHue.value); window.location.reload();">
     </p>
   </div>
+  
   <div class="slidecontainer">
     <p align='center'>
     Grayscale: 
@@ -60,4 +63,5 @@ include 'workspace.php';
     </p>
   </div>
 </p>
+
 </div>
