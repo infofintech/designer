@@ -25,7 +25,7 @@ include 'workspace.php';
   </div>
   <div class="slidecontainer">
     <p align='center'>
-    Brightness: 
+    Bright: 
     <input type='button' value="<?=$brightness.'%';?>"> 
     Saturate: 
     <input type='button' value="<?=$saturation.'%';?>">
